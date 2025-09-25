@@ -1,7 +1,7 @@
 pipe{
     agent any
     tools{
-        maven 'Maven3'
+        maven 'MAVEN_HOME'
     }
     stages{
         stage('checking'){
@@ -9,7 +9,7 @@ pipe{
             git branch:'master', url:'https://github.com/TheZink/OTP_demo6'
         }
     }
-    
+
     stage('Build') {
             steps {
                 bat 'mvn clean install'
