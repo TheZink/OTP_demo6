@@ -1,16 +1,15 @@
-pipeline{
+pipeline {
     agent any
-    tools{
-        maven 'MAVEN_HOME'
-    }
-    stages{
-        stage('checking'){
-            steps{
-            git branch:'master', url:'https://github.com/TheZink/OTP_demo6'
+tools{
+    maven 'MAVEN_HOME' // Maven3 is the name of *your own* defined maven name in Jenkins.
+}
+    stages {
+        stage('Checkout') {
+            steps {
+                git 'https://github.com/TheZink/OTP_demo6.git'
+            }
         }
-    }
-
-    stage('Build') {
+        stage('Build') {
             steps {
                 bat 'mvn clean install'
             }
