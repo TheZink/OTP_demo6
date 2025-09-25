@@ -11,10 +11,11 @@ import java.util.Scanner;
 <span class="nc" id="L11">        int speed = scanner.nextInt();</span>
 
 <span class="nc" id="L13">        System.out.println(&quot;The required time to reach: &quot; + calculateTime(distance, speed));</span>
-<span class="nc" id="L14">    }</span>
+<span class="nc" id="L14">        scanner.close();</span>
+<span class="nc" id="L15">    }</span>
 
     public static double calculateTime(int x, int v){
-<span class="fc" id="L17">        return x / v;</span>
+<span class="fc" id="L18">        return x / v;</span>
     }
 }
 </pre><div class="footer"><span class="right">Created with <a href="http://www.jacoco.org/jacoco">JaCoCo</a> 0.8.12.202403310830</span></div></body></html>

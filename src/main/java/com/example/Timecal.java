@@ -11,6 +11,7 @@ public class Timecal {
         int speed = scanner.nextInt();
 
         System.out.println("The required time to reach: " + calculateTime(distance, speed));
+        scanner.close();
     }
 
     public static double calculateTime(int x, int v){
