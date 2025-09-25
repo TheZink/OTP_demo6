@@ -5,7 +5,7 @@ pipe{
     }
     stages{
         stage('checking'){
-            steps
+            steps{
             git branch:'master', url:'https://github.com/TheZink/OTP_demo6'
         }
     }
