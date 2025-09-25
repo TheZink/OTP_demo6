@@ -9,7 +9,7 @@ pipeline {
         // Define Docker Hub repository name
         DOCKERHUB_REPO = 'ilkkasin/otp_demo6'
         // Define Docker image tag
-        DOCKER_IMAGE_TAG = 'latest'
+        DOCKER_IMAGE_TAG = 'docker.dockerfile'
     }
 tools{
     maven 'MAVEN_HOME' // MAVEN_HOME is the name of *your own* defined maven name in Jenkins.
